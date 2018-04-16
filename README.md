@@ -23,3 +23,25 @@ The jar file is located in the folder 'dist'. You can simply run W8tedAlloy as f
 
     java -jar W8tedAlloy.jar
     
+### Example
+
+    sig Book{ content:  Page }
+
+    sig Page{}
+
+    one sig Abstract1 extends Page{}
+    one sig Abstract2 extends Page{}
+    one sig HardBook1 extends Book{}
+    one sig HardBook2 extends Book{}
+
+ 
+    odds 5  lowPriority{ 
+        all b : Book | some b.content
+    }
+
+    pred aMust {
+        HardBook1.content = none
+    }
+    run {aMust  and lowPriority } for 6 but exactly 4 Book
+
+    
