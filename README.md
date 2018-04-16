@@ -2,7 +2,7 @@ W8tedAlloy
 ===========
 
 
-This repository is a version of Alloy, that allows you write constraints which are in conflict with each other,
+This repository is a version of Alloy that allows you write constraints which are in conflict with each other,
 using a MaxSAT solver to find an optimal model.
 
 ### Changes
@@ -17,4 +17,9 @@ To work properly, it is essential to choose a MaxSAT solver as your solver, othe
 
     pred allBooksHaveSomePage{...}
     
+### Download
+
+The jar file is located in the folder 'dist'. You can simply run W8tedAlloy as follows:
+
+    java -jar W8tedAlloy.jar
     
