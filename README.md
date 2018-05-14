@@ -7,13 +7,13 @@ using a MaxSAT solver to find an optimal model.
 
 ### Changes
 
-The most important change is adding the keyword 'odds' to the Alloy specifications. It can define a constraint with prioritiy levels 1 to 9.
+The most important change is adding the keyword 'odds' to the Alloy specifications. It can define a constraint with priority levels 1 to 9.
 
 Usage:
 
     odds 2 allBooksHaveSomePages{...}
 
-To work properly, it is essential to choose a MaxSAT solver as your solver, otherwise the code above will be translated as:
+To work properly, it is essential to choose a MaxSAT solver as your solver; otherwise, the code above will be translated as:
 
     pred allBooksHaveSomePages{...}
     
