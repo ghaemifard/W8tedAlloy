@@ -2,7 +2,7 @@ W8tedAlloy
 ===========
 
 
-This repository is a version of Alloy that allows you to write constraints which are in conflict with each other,
+This repository is a version of [Alloy](http://alloy.csail.mit.edu/alloy/) that allows you to write constraints which are in conflict with each other,
 using a MaxSAT solver to find an optimal model.
 
 ### Changes
